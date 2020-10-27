@@ -25,12 +25,12 @@ void blinker() {
   distance = duration*0.034/2;
   if (distance < 10){
     digitalWrite(LED_BUILTIN,HIGH);// turn the LED on (HIGH is the voltage level)
-    Serial.println("LED: ON");
+    Serial.println("Motion intterupt");
     delay(1000); // wait for a second
   }
   else{
     digitalWrite(LED_BUILTIN,LOW);    // turn the LED off by making the voltage LOW
-    Serial.println("LED: OFF");
+    Serial.println(distance);
     delay(1000); // wait for a second
   }
 delay(1000);
